@@ -1,0 +1,18 @@
+{
+  "name": "webdriverjs-chrome-headless",
+  "private": true,
+  "scripts": {
+    "lint": "tslint --project tsconfig.json --type-check",
+    "compile": "tsc",
+    "start": "yarn compile && yarn lint && node ./target/index.js"
+  },
+  "dependencies": {
+    "selenium-webdriver": "3.4.0",
+    "tslint": "5.2.0",
+    "tslint-language-service": "0.9.5",
+    "typescript": "2.3.2"
+  },
+  "devDependencies": {
+    "@types/selenium-webdriver": "3.0.4"
+  }
+}
